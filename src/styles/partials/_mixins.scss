@@ -5,3 +5,9 @@
     justify-content: center;
     align-items: center;
 }
+
+@mixin d-flex-space-between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

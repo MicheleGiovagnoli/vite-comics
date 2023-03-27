@@ -64,9 +64,7 @@ export default {
     @include mixins.d-flex-center;
 
     ul {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+        @include mixins.d-flex-space-between;
         list-style: none;
         width: 80%;
 

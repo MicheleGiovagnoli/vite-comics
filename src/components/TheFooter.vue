@@ -31,6 +31,7 @@
 
 <style scoped lang="scss">
 @use '../styles/partials/variables' as*;
+@use '../styles/partials/mixins';
 
 .footer-top {
     height: 400px;
@@ -41,9 +42,7 @@
     .wrapper {
         width: 80%;
         display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin: auto;
+        @include mixins.d-flex-space-between;
 
     }
 
@@ -67,9 +66,7 @@
     .container {
         width: 80%;
         margin: auto;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        @include mixins.d-flex-space-between;
 
         .container-button {
             .button {
@@ -81,8 +78,7 @@
         }
 
         .social {
-            display: flex;
-            align-items: center;
+            @include mixins.d-flex-space-between;
 
             span {
                 color: $color-primary;
