@@ -78,6 +78,7 @@ nav {
     display: flex;
     justify-content: space-between;
     width: 80%;
+    height: 110px;
     margin: auto
 }
 
@@ -88,14 +89,16 @@ nav {
     //Annidamento
     .link {
         padding: 10px;
-        padding-bottom: 30px;
+        padding-bottom: 40px;
         text-decoration: none;
+        font-weight: bold;
+        text-transform: uppercase;
         color: black;
         transition: color 0.3s ease;
 
         &:hover {
-            color: rgb(2, 130, 249);
-            border-bottom: solid 5px rgb(2, 130, 249);
+            color: $color-primary;
+            border-bottom: solid 5px $color-primary;
         }
     }
 }
