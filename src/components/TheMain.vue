@@ -51,7 +51,7 @@ export default {
 @use "../styles/partials/mixins";
 
 .wrapper-main {
-    background-color: black;
+    background-color: rgb(28, 28, 28);
 
     .team-titans {
         height: 400px;
@@ -66,6 +66,13 @@ export default {
             position: absolute;
             bottom: -5%;
             left: 10%;
+            cursor: pointer;
+            transition: all 0.5s ease;
+
+            &:hover {
+                color: black;
+                bottom: 0px;
+            }
 
             h2 {
                 background-color: $color-primary;
