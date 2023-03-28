@@ -60,7 +60,7 @@ export default {
 
 .container {
     background-color: $color-primary;
-    height: 130px;
+    height: 150px;
     @include mixins.d-flex-center;
 
     ul {
