@@ -2,7 +2,20 @@
 export default {
     name: "TheMain",
     data() {
-        return {}
+        return {
+            variabile: false,
+        }
+    },
+    methods: {
+        showSeries() {
+            if (this.variabile == false) {
+                this.variabile = true;
+            } else if (this.variabile == true) {
+                this.variabile = false;
+            }
+            console.log(this.variabile);
+        }
+
     },
     props: {
         passaggio: Array
@@ -13,13 +26,13 @@ export default {
 <template>
     <div class="wrapper-main">
         <div class="team-titans">
-            <div class="button-blue">
+            <div class="button-blue" @click="showSeries()">
                 <h2>CURRENT SERIES</h2>
             </div>
 
         </div>
 
-        <div class="cards-container">
+        <div class="cards-container" v-show="variabile == true">
             <div v-for="(element, i) in passaggio" :key="i" class="cards">
                 <img :src="element.thumb" :alt="element.type">
                 <h3>

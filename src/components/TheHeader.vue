@@ -98,7 +98,7 @@ nav {
 
         &:hover {
             color: $color-primary;
-            border-bottom: solid 5px $color-primary;
+            border-bottom: solid 10px $color-primary;
         }
     }
 }
