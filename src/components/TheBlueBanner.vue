@@ -74,6 +74,12 @@ export default {
             text-transform: uppercase;
             color: white;
             @include mixins.d-flex-center;
+            transition: color 0.5s ease;
+
+            &:hover {
+                color: black;
+
+            }
 
             span {
                 font-size: 13px;
