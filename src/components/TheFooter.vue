@@ -105,9 +105,18 @@ export default {
             .dc-container {
                 padding: 10px;
 
+                h1 {
+                    font-size: 20px;
+                }
+
                 span {
                     color: grey;
                     display: block;
+
+                    &:hover {
+                        text-decoration: underline;
+                        cursor: pointer;
+                    }
                 }
             }
         }
@@ -142,6 +151,11 @@ export default {
                 padding: 10px;
                 color: white;
                 border: solid 2px $color-primary;
+                transition: all 0.5s ease;
+
+                &:hover {
+                    background-color: $color-primary;
+                }
             }
 
         }
@@ -157,7 +171,15 @@ export default {
 
             img {
                 padding: 10px;
+                border-radius: 50%;
+                transition: all 0.5s ease-in-out;
+
+                &:hover {
+                    background-color: $color-primary;
+                }
             }
+
+
         }
     }
 }
