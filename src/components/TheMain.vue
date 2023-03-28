@@ -91,7 +91,7 @@ export default {
         padding: 50px 0px;
 
         .cards {
-            width: calc((100% / 6) - 50px);
+            width: calc((100% / 6) - 20px);
             padding: 30px 20px;
             color: white;
             font-size: 10px;
