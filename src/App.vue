@@ -94,14 +94,18 @@ export default {
 </script>
 
 <template>
+  <!-- HEADER -->
   <TheHeader />
 
+  <!-- MAIN -->
   <main>
     <TheMain :passaggio="cards" />
   </main>
 
+  <!-- BANNER -->
   <TheBlueBanner />
 
+  <!-- FOOTER -->
   <TheFooter />
 </template>
 
